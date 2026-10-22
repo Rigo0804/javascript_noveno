@@ -7,7 +7,7 @@ En esta seccion irán las listas de actividades enumeradas
 
 - Frontend ![Badge Frontend](https://img.shields.io/badge/STATUS-EN%20Proceso-orange)
 - Backend ![Badge Backend](https://img.shields.io/badge/STATUS-EN%20Proceso-orange)
-- Base de Datos ![Badge BD](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
+- Base de Datos ![Badge BD](https://img.shields.io/badge/STATUS-%20DESAROLLO-yellow)
 
 ### Lista de actividades concluídas
 - [x] Interfaz
@@ -17,18 +17,37 @@ En esta seccion irán las listas de actividades enumeradas
 - [ ] Enlaces
 - [ ] Más elementos
 
-### Código no resuelto
-```python
-if mes > 12 or mes == 0:
-    print("Error mes en silla de ruedas:")
+### Código de JS para listas de datos (arrays)
+```javascript
+let datos = ["Francia", 23, "sucio", true, false, 25.8]
+datos.unshift("tigre")
+datos.push("Paris")
+console.log(datos);
 
-if mes == 3 or mes == 4 or mes == 5:
-    print("la estacion es: PRIMAVERA")
-elif mes == 6 or mes == 7 or mes == 8:
-    print("la estacion es: VERANO")
-elif mes == 9 or mes == 10 or mes == 11:
-    print("la estacion es: OTOÑO")
-elif mes == 12 or mes == 1 or mes == 2:
-    print("la estacion es: INVIERNO")
+datos.shift()
+
+console.log(datos);
+
+let d2 = datos.slice(1,5)
+console.log(d2);
+
+let d3 = datos.splice(2,5)
+console.log(d3);
+
+let na = ["caballo", 23, "tucan", "pantera", "conejo", "raton"]
+console.log(na, datos);
+na.push("therian");
+
+let total = na.concat(datos);
+console.log(total);
+
+let nombre ="rigo"
+nombre.to
+//push ingresa un nuevo elemento al array
+//pop elimina el ultimo elemento
+//shift elimina el primer elemento del array
+//unshift inserta el primer elemento del array y mueve el estaba
+//slice nos devuelve una copia de un intervalo del arreglo
+//splice nos elimina un intervalo del arreglo
 ```
 -------------------------------------------------------------------------
